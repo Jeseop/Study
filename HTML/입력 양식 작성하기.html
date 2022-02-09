@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22년 02월 09일_입력 양식 작성하기</title>
+</head>
+<body>
+    <h2>form 태그</h2>
+    <p>form 태그 속성</p>
+    <ul>
+        <li>method : 사용자가 입력한 내용을 어떻게 서버 쪽 프로그램으로 넘겨줄 지 지정. get방식과 post방식이 있음</li>
+        <li>name : 폼의 이름 지정</li>
+        <li>action : form 태그 안의 내용을 처리할 서버 프로그램 지정</li>
+        <li>target : 현재 창이 아닌 다른 위치에서 열도록 함</li>
+    </ul>
+    <p>자동 완성 기능을 나타내는 autocomplete 속성이 있다. 기본 속성값은 on이고, off하면 기능 끄기 가능</p>
+    <h2>form 요소를 그룹으로 묶는 fieldset과 legend 배우기</h2
+  <form action="">
+    <fieldset>
+      fieldset이란 form요소에서 연관된 요소들을 하나의 그룹(네모)으로 묶을 때 사용한다.
+    </fieldset>
+    <fieldset>
+      <legend>legend는 fieldset 태그의 캡션을 정의한다.</legend>
+    </fieldset>      
+  </form>
+  <br>
+  <label>1. 아이디(6자 이상)<input type="text"></label>
+  <label for="id명">2. 레이블명<input id="id명"></label>
+  <br>
+  <h2>태그의 다양한 type 속성</h2>
+  <fieldset>
+    <label>아이디: <input type="text" id="user_id"></label>
+    <label>비밀번호: <input type="password" name="user_pw" id=""></label>
+    <input type="submit" value="로그인">
+
+    <ul id="shipping">
+        <li>
+          <label for="user-name">이름 </label>
+          <input type="text" id="user-name">
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr">
+        </li>
+        <li>
+          <label for="mail">이메일</label>
+          <input type="email" id="mail">
+        </li>        
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone">
+        </li>
+      </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>선택해보기</legend>
+    <p><b>언제가 인생의 황금기였을까</b></p>
+    <ul>
+      <li>
+        <label><input type="checkbox" value="">호텔리어</label>
+        <input type="text">
+      </li>
+      <li>
+        <label><input type="checkbox" value="">기업영업</label>
+        <input type="text">
+      </li>
+      <li>
+        <label><input type="checkbox" value="">기업교육컨설팅</label>
+        <input type="text">
+      </li>
+      <li>
+        <label><input type="checkbox" value="">개발자</label>
+        <input type="text">
+      </li>
+    </ul>   
+    <p><b>난 성공할 것이다</b></p>
+    <ul>
+      <li><label><input type="radio" name="life" value="" >하나만 골라야해</label></li>
+      <li><label><input type="radio" name="life" value="">라디오 버튼은 하나!</label></li>
+    </ul>
+    <!-- 라디오 버튼에 name 속성이 같아야지만 하나의 버튼을 선택할 수 있다.      -->
+  </fieldset>
+
+
+
+</body>
+</html>
