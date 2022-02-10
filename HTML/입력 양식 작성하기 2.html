@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22년 02월 10일_입력 양식 작성하기 2</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>회원 가입을 환영합니다</h1>
+      <form>
+        <fieldset>
+          <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="uid">아이디</label>
+              <input type="text" id="uid" />
+            </li>
+            <li>
+              <label for="umail">이메일</label>
+              <input type="email" id="umail" />
+            </li>
+            <li>
+              <label for="pwd1">비밀번호</label>
+              <input type="password" id="pwd1" />
+            </li>
+            <li>
+              <label for="pwd1">비밀번호 확인</label>
+              <input type="password" id="pwd2" />
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>이벤트 및 다양한 소식</legend>
+          <input type="radio" name="mailing" id="mailing_y" />
+          <label for="mailing_y">메일 수신</label>
+          <input type="radio" name="mailing" id="mailing_n" checked />
+          <label for="mailing_n">메일 수신 안 함</label>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="가입하기" />
+          <input type="reset" value="취소" />
+        </div>
+      </form>
+      <label><input type="checkbox" value="" />바벨 5kg</label>
+      <input type="number" min="0" max="3" value="1" />개 (최대 3개)
+      <label><input type="checkbox" value="f_5" />바벨 5kg</label>
+      <input type="range" min="0" max="3" value="1" />개 (최대 3개)
+
+      <form>
+        <h1>날짜 고르기</h1>
+        <input type="date" />
+        <input type="month" />
+        <input type="week" />
+        <hr />
+        <h1>시간 고르기</h1>
+        <input type="time" />
+        <input type="datetime-local" />
+        <hr />
+        <h1>범위 한정하기</h1>
+        <input
+          type="date"
+          min="2022-07-01"
+          max="2022-07-31"
+          value="2022-07-11"
+        />
+        <input type="time" />
+      </form>
+      <br>
+      <input type="file"> 
+      <br>
+      <form>
+        <fieldset>
+          <input type="hidden" name="url" id="url" value="사이트를 통한 직접 로그인">
+          <label>아이디: <input type="text" id="user_id" size="10"></label>
+          <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+          <input type="submit" value="로그인">
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>택배 정보</legend>
+          <ul id="shipping">
+            <li>
+              <label for="prod">주문한 상품</label>
+              <input type="text" id="prod" value="선물용 7KG" readonly>
+            </li>
+            <li>
+              <label for="user-name">이름 </label>
+              <input type="text" id="user-name" autofocus required>
+            </li>
+            <li>
+              <label for="addr">배송 주소</label> 
+              <input type="text" id="addr" required>
+            </li>
+            <li>
+              <label for="mail">이메일</label>
+              <input type="email" id="mail">
+            </li>        
+            <li>
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요.(01012345678)" required>
+            </li>
+            <li>
+              <label for="d-day">배송 지정</label>
+              <input type="date" id="d-day"> <small>(주문일로부터 최소 3일 이후)</small>
+            </li>        
+          </ul>
+        </fieldset>
+        <div>
+          <input type="submit" value="주문하기"> 
+          <input type="reset" value="취소하기">
+        </div>
+      </form>
+      <label for="memo">메모</label>
+      <textarea id="memo" cols="40" rows="4"></textarea>
+    </div>
+  </body>
+</html>
