@@ -1,4 +1,46 @@
+1. 글꼴 관련 스타일 
+
 글꼴 : font-family 
 글자 크기 : font-size 
 이탤릭체 글자 표시 : font-style 
 글자 굵기 : font-weight 
+
+2. 웹 폰트 사용하기 
+
+@font-face 로 웹 폰트를 정의 하기. 
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>구글 폰트 사용하기</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+      h1 {
+        font-size:60px;
+        font-weight:bold;
+        font-family: 'Stylish', sans-serif;
+      }      
+    </style>
+  </head>
+  <body>
+    <h1>요 글자 굉장히 귀여운걸?</h1>
+  </body>
+</html>
+
+3. 텍스트 관련 스타일 
+
+글자색 지정 color 속성
+
+1) 16진수로 표현하는 방법 #000000 - #ffffff 까지. 두 자리가 중복되면 합치기 가능.
+hsl과 hsla로 표현하는 방법 hue(색상) / saturation(채도) / lightness(명도) / alpha(불투명도)의 줄임말
+hue : 0° 및 360° : red, 120° : green, 240° : blue
+saturation(%) : 0% 회색 톤, 100% 원래의 색
+lightness(%)  : 0% 가장 어두움, 50% 원래의 색, 100% 흰색
+alplha(0-1) : 완전 투명 ~ 완전히 불투명
+
+2) 색상의 영문명 표기
+
+3) rgb와 rgba로 표현하는 방법
+red / green / blue / alpha (0-255 알파만 0-1)
+불투명도 표시할 때 0.6이면 .6으로 표시 가능
