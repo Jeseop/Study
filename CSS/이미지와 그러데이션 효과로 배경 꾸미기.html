@@ -1,0 +1,45 @@
+1. 배경색과 배경 범위 지정하기
+
+배경색을 지정하는 background-color 속성
+    색상을 세밀히 조절하고 싶을 때 16진숫값 / 투명도도 함께 조절하고 싶다면 rgba 표기법
+    body 태그 선택자에서 스타일을 지정하면 문서 전체에 상속되지만 background-color값은 상속되지 않음. 
+    기본적으로 모든 웹 문서 요소의 배경은 투명하므로 body 스타일로 지정한 문서 배경이 그대로 비치는 것일 뿐, 웹 요소에 배경색이 상속된 것이 아님.
+
+배경색의 적용 범위를 조절하는 background-clip 속성
+    border-box (테두리까지 배경 지정) / padding-box (테두리를 뺀 패딩 범위까지 배경 지정) / content-box (콘텐츠에만 배경 지정)
+
+2. 배경 이미지 저장하기
+
+웹 요소에 배경 이미지를 넣는 background-image 속성
+    background-image: url('이미지 파일 경로')
+
+배경 이미지 반복 방법 지정 background-repeat 속성
+    repeat : 브라우저 화면 가득 찰 때까지 가로와 세로 반복함 // 기본값
+    repeat-x : x축으로 너비 가득 찰 때까지 반복
+    repeat-y : y축으로 높이 가득 찰 때까지 반복
+    no-repeat : 한 번만 표시하고 반복 X
+
+배경 이미지 위치 조절 background-position 속성
+    background-position: <수평 위치[가로]> <수직 위치[세로]>;
+
+배경 이미지의 적용 범위를 조절 background-origin 속성
+    content-box (내용 부분에만 배경 이미지 표시) / padding-box (패딩까지 배경 이미지 표시)/ border-box (테두리까지 배경 이미지 표시)
+
+배경 이미지 고정 background-attachment 속성
+    scroll : 배경 이미지도 스크롤 되는 것 // 기본값
+    fixed : 배경 이미지는 고정되고 내용만 스크롤 되는 것
+
+background 속성 하나로 배경 이미지 제어하기
+    한 줄로 쓰기 가능. ex) background: url('') no-repeat center bottom fixed;
+
+배경 이미지 크기를 조절하는 backgroud-size 속성
+    auto : 원래 배경 이미지 크기만큼
+    contain : 비율을 맞춰. 그리고 그림을 다 보여줘야해!
+    cover : 비율을 맞춰. 그림은 다 안 보여줘도 괜찮아. 어떻게든 주어진 영역에 꽉 채워!
+    <크기> : 이미지의 너비와 높이를 지정. 값이 하나일 경우 '너빗값'으로 인식
+    <백분율> : 요소의 크기를 백분율로 지정하고 그 크기에 맞도록 배경 이미지를 확대하거나 축소
+
+3. 그러데이션 효과로 배경 꾸미기
+
+//잠정 보류//
+

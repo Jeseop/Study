@@ -82,3 +82,25 @@ float 속성을 해제하는 clear 속성
     float 속성을 사용하면 웹의 요소를 왼쪽이나 오른쪽에 배치할 수 있음. 그런데 그 다음에 넣는 다른 요소에도 float 속성이 전달이 됨.
     따라서 float 속성이 더 이상 필요없다고 알려주는 속성이 있음. 그것은 바로 clear 속성.
     clear 속성값 : left (float:left를 해제) / right (float:right를 해제) / both (float:left와 float:right를 해제)
+
+5. 웹 요소의 위치 지정하기
+
+웹 요소의 위치를 정하기 (position)
+    1) position 속성으로 기준 위치를 정한다.
+    2) 요소의 위치를 (left / right / top / bottom) 정한다.
+    3) 속성값을 지정한다.
+    left / right / top / bottom : 기준 위치와 요소 사이에 왼쪽/오른쪽/위쪽/아래쪽으로 얼마나 '떨어져' 있는지
+
+배치 방법을 지정하는 position 속성
+    position 속성 : 웹 문서 안의 요소를 배치해주는 속성
+    1) static : 문서의 흐름에 맞춰 배치함 // 기본값
+    2) relative : static과 같음 (위칫값을 지정할 수 있다는 것이 포인트!)
+    3) absolute : 'relative값을 사용한 상위 요소'를 기준으로 위치를 지정해 배치함
+    4) fixed : '브라우저 창'을 기준으로 위치를 지정해 배치함
+
+    중요한 것! 3) absolute 값 꼭 주의하기.
+    요소에 position을 absolute라고 한 후 위칫값을 지정하면 요소 중에서 position에 relative를 사용한 요소를 기준으로 위치를 결정함.
+    만약 부모 요소 중에 없으면 상위 요소를 찾아보고, 그래도 없으면 더 위의 요소를 찾는다.
+    즉!! 어떤 요소에 position을 absolute를 사용하려면 부모 요소 position에 꼭 relative라고 지정해야 원하는 대로 배치할 수 있음!!
+
+//시험 끝//
